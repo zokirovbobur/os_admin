@@ -16,8 +16,9 @@ public class MainController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @GetMapping("requests/all")
+    @PostMapping("requests")
     public ResponseEntity<List<Map<String,Object>>> requestsAll(@RequestBody UserModel userModel){
+        System.out.println(userModel);
         if (userModel.validate()){
             return ResponseEntity.ok(jdbcTemplate.queryForList("select * from requests"));
         }

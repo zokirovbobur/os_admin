@@ -8,12 +8,6 @@ import springfox.documentation.annotations.ApiIgnore;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Author: Rustambekov Avazbek
- * Date: 09/12/2019
- * Time: 17:46
- */
-
 @ApiIgnore
 @RestController
 public class HomeController {
