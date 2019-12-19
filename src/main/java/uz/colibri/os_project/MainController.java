@@ -23,5 +23,4 @@ public class MainController {
         }
         return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(Collections.emptyList());
     }
-
 }
